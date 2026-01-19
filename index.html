@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis Report Guidelines</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- RESET & BASIC SETUP --- */
+        * {
+            box-sizing: border-box;
+            cursor: crosshair; /* Adds to the technical feel */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Archivo Narrow', sans-serif; /* UPDATED FONT */
+            font-size: 20px; /* Slightly larger base for Narrow font readability */
+            line-height: 1.4;
+            overflow-x: hidden;
+        }
+
+        /* --- TYPOGRAPHY & HIERARCHY --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            /* TIGHTENED TOP PADDING */
+            padding: 40px 20px 200px 20px; 
+        }
+
+        h1 {
+            font-size: 5.5rem;
+            line-height: 0.9;
+            letter-spacing: -2px;
+            margin-top: 0; /* REMOVED TOP MARGIN */
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            border-top: 4px solid black;
+            padding-top: 0.5rem;
+            margin-top: 4rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+            font-weight: 700;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        p, li {
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            padding-left: 0.5rem;
+        }
+
+        strong, b {
+            font-weight: 700;
+        }
+
+        /* Helper for list styling */
+        .list-clean {
+            list-style: none;
+            padding-left: 0;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        /* The Official Statement Style */
+        .official-statement {
+            font-family: 'Courier New', Courier, monospace; /* Keeping mono for contrast */
+            font-size: 0.9rem;
+            border: 1px solid black;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* --- INTERACTION STYLES --- */
+        
+        /* Sparkle Particle */
+        .sparkle {
+            position: absolute;
+            pointer-events: none;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial, sans-serif; /* Keep symbols standard */
+            animation: fadeAndDrop 1s forwards;
+            z-index: 9999;
+        }
+
+        @keyframes fadeAndDrop {
+            0% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, 20px) scale(0.5);
+            }
+        }
+
+        /* Interactive Text */
+        .word {
+            display: inline-block;
+            position: relative;
+            transition: transform 0.1s ease-out; /* Smooth return */
+            will-change: transform;
+        }
+        
+        /* Prevent layout breaks on spaces */
+        .space {
+            display: inline-block;
+            width: 0.25em;
+        }
+		
+/* --- DOWNLOAD BUTTON STYLE --- */
+    .pdf-button {
+        display: inline-block;
+        border: 2px solid black;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 12px 24px;
+        margin-bottom: 2rem;
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .pdf-button:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+
+<div class="container" id="content">
+
+    <h1>Required Thesis Report Guidelines</h1>
+
+    <p>A thesis report is required to pass CDGD-403 Graphic Design Senior Thesis.</p>
+    
+    <h3>The thesis report contains the following items:</h3>
+    <ul class="list-clean">
+        <li>Thesis Summary</li>
+        <li>Thesis Proposal</li>
+        <li>Bibliography</li>
+        <li>Documentation of the Process/Projects</li>
+        <li>Colophon</li>
+    </ul>
+<br><br>
+    <h1>DETAILED Breakdown...</h1>
+   
+    <h2>Thesis Summary (Approx. 200 words)</h2>
+    <p>The summary (or abstract) is a quick snapshot of your entire thesis. It allows a reader to understand what you did without reading the whole book. It should be written as one single paragraph.</p>
+    <p>Don’t try to make it perfect yet. Write a rough draft now to guide you, update it as you work, and rewrite the final version when the project is 100% finished.</p>
+    <p>To write it, just answer these four questions in order:</p>
+    <ol>
+        <li><strong>The Problem (Introduction):</strong>  Why did you do this project? What specific issue, observation, or curiosity sparked the idea? Why does this topic need attention right now?</li>
+        <li><strong>The Process (Methods):</strong> How did you do the work? What tools, research methods, or materials did you use? (Note: Since this is a design thesis, the act of "making" and "prototyping" is part of your method—mention that here.)</li>
+        <li><strong>The Outcome (Results):</strong> What did you actually create or discover? What is the tangible result of this year’s work?</li>
+        <li><strong>The Takeaway (Discussion):</strong> So what? Why does your result matter? How does it fit into the bigger picture of design or society, and where could it go next?</li>
+    </ol>
+
+    <h2>Thesis Proposal</h2>
+    <p>This is detailed writing about exactly what you intend to do this semester. It establishes your argument, your plan of attack, and the specific things you will make. There is no mandatory length of writing but your proposal should cover these five areas:</p>
+    <ol>
+        <li><strong>Problem:</strong> You cannot propose a solution until you define the problem. A strong problem statement has three specific beats:
+            <ul>
+                <li><em>The Status Quo (Stasis):</em> What is the current convention or accepted "norm" in this field? What do people currently believe or do?</li>
+                <li><em>The Gap (Destabilization):</em> Why is that current norm insufficient, outdated, or wrong? What is the crack in the foundation?</li>
+                <li><em>The Stakes (Consequences):</em> Why does this matter? What is the cost of ignoring this problem, or the benefit of fixing it?</li>
+            </ul>
+        </li>
+        <li><strong>Question:</strong> Based on the problem above, what is the core question or argument driving your project?</li>
+        <li><strong>Plan (Your Investigation):</strong> How will you answer that question? What is your research strategy? This includes reading and writing, but also your visual experiments, material tests, and prototyping.</li>
+        <li><strong>Deliverables (or Anticipated Results):</strong> What are you actually going to make? List the artifacts, systems, or publications you plan to produce to test your theory.</li>
+        <li><strong>Synthesis/Analysis:</strong> How will you measure success? How will you determine if your experiments actually answered your question?</li>
+    </ol>
+
+    <h2>Bibliography</h2>
+    <p>Think of this as your research library. An annotated bibliography is the foundation of your inquiry. It is a list of the sources you have already examined, as well as the ones you plan to investigate next. Do not limit yourself to just books—include essays, podcasts, visual precedents, and films.</p>
+    <p>For every entry in your list, you must write a few sentences (the "annotation") that:</p>
+    <ul>
+        <li><strong>Summarize…</strong> What is this source? Briefly explain the main argument. If the source is a design project or artifact, describe what it is and how it functions.</li>
+        <li><strong>Assess…</strong> Is this source reliable? Is it biased or objective? How does it fit in with the other things you are reading?</li>
+        <li><strong>Reflect…</strong> This is the most important part. Why is this source relevant to your thesis? What did you learn from it? Did it change your perspective, force you to ask a new question, or inspire a specific visual experiment? Don't just list it—explain how you are using it.</li>
+    </ul>
+
+    <h2>Documentation of the Process/Projects</h2>
+    <p>This is highly dependent on the nature of your project.</p>
+
+    <h2>The Colophon (The Metadata)</h2>
+    <p>The colophon usually appears on the very last page (or the back of the title page) and lists the specific "ingredients" used to make the publication.</p>
+    <ol>
+        <li><strong>Credits:</strong> Who did the work?
+            <ul>
+                <li>Design & Writing: Attribute this to yourself.</li>
+                <li>Editing/Photography: Credit anyone who helped refine the text or capture images.</li>
+            </ul>
+        </li>
+        <li><strong>The Specs:</strong> What tools were used?
+            <ul>
+                <li>Typography: List the specific typefaces used.</li>
+                <li>Materials: List the paper stock (weight, brand) if relevant.</li>
+                <li>Production: List the printing method (Risograph, Laser, Offset), the city, and the date of production.</li>
+            </ul>
+        </li>
+        <li><strong>Thesis Requirements:</strong> Because this is an academic document, you must also include:
+            <ul>
+                <li>Acknowledgments: A brief space to thank critics, mentors, or peers.</li>
+                <li>The Official Statement: You must include the following sentence exactly as written below:</li>
+            </ul>
+        </li>
+    </ol>
+
+    <div class="official-statement">
+        A thesis submitted in partial fulfillment of the requirements for the degree of Bachelor of Fine Arts in Communications Design at Pratt Institute, May 2026
+    </div>
+<br><br>
+    <h1>Format Options</h1>
+    <p>The thesis report is an "object," but its form is open-ended. As long as it contains all the required components (Summary, Proposal, Bibliography, etc.), the container is up to you.</p>
+    <ol>
+        <li><strong>Common Formats:</strong> Most students choose one of the following:
+            <ul>
+                <li>E-Book: A designed, multi-page PDF (often hosted on platforms like Issuu).</li>
+                <li>Website: A digital publication (often built using tools like Cargo or Readymag).</li>
+            </ul>
+        </li>
+        <li><strong>Archive Requirement (Mandatory):</strong> Links rot but files last. Therefore, regardless of the format you choose, you must submit a static PDF version of your dossier at the end of the semester for the school archive.</li>
+        <li><strong>If You Choose a Website...</strong> You cannot simply submit a URL. You must capture your site as a flat document.
+            <ul>
+                <li>Safari Users: Go to File > Export as PDF.</li>
+                <li>Firefox/Chrome Users: Use a full-page screenshot plug-in (like FireShot) to capture the entire vertical scroll of each page, then combine them into a single PDF.</li>
+            </ul>
+        </li>
+    </ol><br>
+	<a href="ThesisReportOneSheet.pdf" target="_blank" class="pdf-button">↓ Download One-Sheet PDF for OFFLINE REFERENCE</a>
+</div>
+
+<script>
+    // --- 1. PREP TEXT FOR INTERACTION ---
+    // Break all text nodes into individual words wrapped in spans
+    function splitTextToWords(element) {
+        if (element.hasChildNodes()) {
+            element.childNodes.forEach(child => {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    const text = child.textContent;
+                    if (text.trim().length > 0) {
+                        const words = text.split(/\s+/);
+                        const fragment = document.createDocumentFragment();
+                        
+                        words.forEach((word, index) => {
+                            if (word) {
+                                const span = document.createElement('span');
+                                span.textContent = word;
+                                span.className = 'word';
+                                fragment.appendChild(span);
+                                
+                                // Add space after word unless it's the last one
+                                if (index < words.length - 1) {
+                                    const space = document.createElement('span');
+                                    space.className = 'space';
+                                    space.innerHTML = '&nbsp;';
+                                    fragment.appendChild(space);
+                                }
+                            }
+                        });
+                        child.replaceWith(fragment);
+                    }
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    splitTextToWords(child);
+                }
+            });
+        }
+    }
+
+    // Run the splitter on the content
+    const contentDiv = document.getElementById('content');
+    splitTextToWords(contentDiv);
+
+    // --- 2. MOUSE TRACKING & LOGIC ---
+    let mouseX = -1000;
+    let mouseY = -1000;
+
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+        
+        createSparkle(e.pageX, e.pageY);
+    });
+
+    // --- 3. SPARKLE EFFECT ---
+    const symbols = ['+', '*', '×', '•', '✦', '·'];
+    
+    function createSparkle(x, y) {
+        // Throttle creation slightly to prevent lag
+        if(Math.random() > 0.4) return;
+
+        const sparkle = document.createElement('div');
+        sparkle.classList.add('sparkle');
+        sparkle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        
+        // Random slight offset
+        const offsetX = (Math.random() - 0.5) * 20;
+        const offsetY = (Math.random() - 0.5) * 20;
+
+        sparkle.style.left = (x + offsetX) + 'px';
+        sparkle.style.top = (y + offsetY) + 'px';
+
+        document.body.appendChild(sparkle);
+
+        // Cleanup after animation
+        setTimeout(() => {
+            sparkle.remove();
+        }, 1000);
+    }
+
+    // --- 4. TEXT REPULSION EFFECT ---
+    const words = document.getElementsByClassName('word');
+    const radius = 100; // Radius of influence
+    const strength = 100; // How hard it pushes
+
+    function animate() {
+        // Optimization: Only run loop if mouse is on screen
+        if (mouseX > 0 && mouseY > 0) {
+            
+            for (let i = 0; i < words.length; i++) {
+                const word = words[i];
+                const rect = word.getBoundingClientRect();
+                
+                // Calculate center of word relative to viewport + scroll
+                const wordX = rect.left + rect.width / 2 + window.scrollX;
+                const wordY = rect.top + rect.height / 2 + window.scrollY;
+
+                // Distance between mouse and word
+                const dx = mouseX - wordX;
+                const dy = mouseY - wordY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < radius) {
+                    // Calculate angle
+                    const angle = Math.atan2(dy, dx);
+                    
+                    // Calculate force (inverse to distance: closer = stronger)
+                    // We invert the direction so it pushes AWAY
+                    const force = (radius - dist) / radius; 
+                    const moveX = -Math.cos(angle) * force * strength;
+                    const moveY = -Math.sin(angle) * force * strength;
+
+                    word.style.transform = `translate(${moveX}px, ${moveY}px)`;
+                } else {
+                    // Reset if out of range (relies on CSS transition for smoothness)
+                    if (word.style.transform !== '') {
+                        word.style.transform = '';
+                    }
+                }
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+
+    // Start the physics loop
+    requestAnimationFrame(animate);
+
+</script>
+
+</body>
+</html>
