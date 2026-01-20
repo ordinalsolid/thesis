@@ -317,15 +317,26 @@
     });
 
     // --- 3. SPARKLE EFFECT ---
-    const symbols = ['+', '*', '×', '•', '✦', '·'];
+// --- 3. SPARKLE EFFECT ---
+    const symbols = ['+', '*', '×', '•', '✦', '·','?'];
+    // ADD THIS NEW LINE BELOW:
+    const colors = ['#FF3333', '#00C897', '#3357FF', '#FFD700', '#FF33A8', '#00FFFF', '#FF6600'];
     
-    function createSparkle(x, y) {
+function createSparkle(x, y) {
         // Throttle creation slightly to prevent lag
-        if(Math.random() > 0.4) return;
+        if(Math.random() > 3) return;
 
         const sparkle = document.createElement('div');
         sparkle.classList.add('sparkle');
+        
+        // Pick a random symbol
         sparkle.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+        // --- NEW CODE START ---
+        // Pick a random color and apply it directly to the element style
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        sparkle.style.color = randomColor;
+        // --- NEW CODE END ---
         
         // Random slight offset
         const offsetX = (Math.random() - 0.5) * 20;
